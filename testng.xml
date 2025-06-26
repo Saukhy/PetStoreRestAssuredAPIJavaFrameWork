@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="reportManager.SetUp"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/Deepti/Eclipse/PetStoreApiRestAssured/src/test/java/Tests/CreateTest.java">
+        <classes><class name="Tests.CreateTest"><methods><include name="createPet"/><include name="createPetEnvEndpoint"/>
+            <include name="createPetUsingPOJO"/></methods></class></classes></test>
+    <test verbose="2" preserve-order="true" name="D:/Deepti/Eclipse/PetStoreApiRestAssured/src/test/java/Tests/TC01_GetPetByStatus.java">
+        <classes><class name="Tests.TC01_GetPetByStatus"><methods><include name="getPetByStatusAvailable"/>
+            <include name="getPetByStatusPending"/><include name="getPetByStatusSold"/></methods></class>
+        </classes></test><test verbose="2" preserve-order="true" name="D:/Deepti/Eclipse/PetStoreApiRestAssured/src/test/java/Tests/TC01_UpdatePetById.java">
+    <classes><class name="Tests.TC01_UpdatePetById"><methods><include name="createUserWithPost"/><include name="updateUserWithPut"/></methods>
+    </class></classes></test><test verbose="2" preserve-order="true" name="D:/Deepti/Eclipse/PetStoreApiRestAssured/src/test/java/Tests/TC01DeletePet.java">
+    <classes><class name="Tests.TC01DeletePet"><methods><include name="createPetUsingPOJO"/><include name="deletePet"/></methods></class></classes></test>
+    <test verbose="2" preserve-order="true" name="D:/Deepti/Eclipse/PetStoreApiRestAssured/src/test/java/Tests/TC01PostUploadImage.java"><classes>
+        <class name="Tests.TC01PostUploadImage"><methods><include name="createUserWithPost"/><include name="uploadImage"/></methods>
+        </class>
+    </classes></test></suite>

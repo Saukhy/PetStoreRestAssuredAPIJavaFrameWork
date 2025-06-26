@@ -1,0 +1,4 @@
+{
+  "createPetEndpoint" : "https://petstore.swagger.io/v2/user",
+  "getPetEndPoint" : "https://petstore.swagger.io/v2/pet/findByStatus"
+}

@@ -2,6 +2,7 @@ package POJO;
 
 import lombok.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -11,11 +12,12 @@ import java.util.List;
 
 public  class PetDetails {
 
-        private int id;
-        private Category category;
-        private String name;
+        private int  id;
+        private Category category ;
+        private String  name;
         private List<Photo> Photo;
         private List<Tags> tag;
         private String status;
+
 
 }

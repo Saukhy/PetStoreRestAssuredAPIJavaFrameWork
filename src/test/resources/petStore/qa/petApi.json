@@ -1,0 +1,7 @@
+{
+  "createPetEndpoint" : "https://petstore.swagger.io/v2/user",
+ "getPetEndPoint" : "https://petstore.swagger.io/v2/pet/findByStatus",
+  "updatePetEndpoint":"https://petstore.swagger.io/v2/pet",
+  "deletePetEndpoint":"https://petstore.swagger.io/v2",
+  "postUploadImage": "https://petstore.swagger.io/v2/"
+}
