@@ -3,7 +3,6 @@ package restUtils;
 import Authentication.APIKeyAuthentication;
 import Authentication.Authentication;
 import Authentication.AuthManager;
-import Utils.Status;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -13,9 +12,8 @@ import io.restassured.specification.SpecificationQuerier;
 import reportManager.ExtentReportManager;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.Map;
-
-import static io.restassured.RestAssured.*;
 
 public class RestUtils {
 
@@ -26,6 +24,16 @@ public class RestUtils {
                 .baseUri(endpoint)
                 .headers(headers) //use as map
                 .contentType(ContentType.JSON);
+
+    }
+
+    private static RequestSpecification getRequestSpecification(Map<String, Object> headers) {
+        return RestAssured
+                .given()
+                .log().all()
+                .headers(headers)
+                .log().all();
+
 
     }
 
@@ -155,6 +163,19 @@ public class RestUtils {
         printRequestLogInReport(requestSpecification);
         printResponseLogInReport(response);
         return response;
+
+    }
+
+    public static Response getGeneric(String endpoint ,Map<String, Object> headers)
+    {
+
+        RequestSpecification requestSpecification = getRequestSpecification(new HashMap<>());
+        Response response = requestSpecification
+                .get(endpoint);
+        printRequestLogInReport(requestSpecification);
+        printResponseLogInReport(response);
+        return response;
+
 
     }
 }

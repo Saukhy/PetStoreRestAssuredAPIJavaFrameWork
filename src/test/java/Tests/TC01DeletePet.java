@@ -71,10 +71,7 @@ public class TC01DeletePet extends PetEndpoints {
 
 
     public void deletePet() {
-//        Awaitility
-//                .await()
-//                .atMost(Duration.ofSeconds(10)) //for much u want to try or timespan
-//                .pollInterval(Duration.ofSeconds(2));
+;
 
         Response response = deletePet(String.valueOf(petId));
         Assert.assertEquals(response.statusCode(), 200);
