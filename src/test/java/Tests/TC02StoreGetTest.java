@@ -11,11 +11,11 @@ import Endpoints.StoreEndpointsUsingRoutesProperties;
 import reportManager.SetUp;
 
 import static restUtils.RestUtils.getGeneric;
-@Listeners(SetUp.class)
+//@Listeners(SetUp.class)
 public class TC02StoreGetTest extends StoreEndpointsUsingRoutesProperties {
 
     @Test
-    public void  deepti ()
+    public void getStore()
     {
 
         Response response = getInventory();
