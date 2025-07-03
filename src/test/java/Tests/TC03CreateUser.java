@@ -15,7 +15,7 @@ import reportManager.SetUp;
 
 import static PayLoads.createUserPayload.createUserPayloadUsingPojo;
 
-@Listeners(SetUp.class)
+//@Listeners(SetUp.class)
 public class TC03CreateUser extends UserEndpointsUsingRoutes {
 
 
