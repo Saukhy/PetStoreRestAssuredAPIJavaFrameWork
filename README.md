@@ -3,6 +3,6 @@
 ✅ Maven for dependency management
 ✅ JSON/XML Request & Response Handling
 ✅ Extent Reports for detailed test reports
-✅ Logging (Log4j/SLF4J)
+
 
 Work in progress..
