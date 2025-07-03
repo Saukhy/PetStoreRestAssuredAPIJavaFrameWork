@@ -13,7 +13,7 @@ import restUtils.RestUtils;
 import java.util.HashMap;
 
 
-@Listeners(SetUp.class)
+//@Listeners(SetUp.class)
 public class TC01PostUploadImage extends PetEndpoints {
 
     static Integer petId;
